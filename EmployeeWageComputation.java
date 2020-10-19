@@ -1,12 +1,16 @@
 public class EmployeeWageComputation {
 
    public static void main(String args[]){
-
-      System.out.println("Welcome to Employee Wage Computation");
+      int IS_FULL_TIME = 1;
+      int EMP_RATE_PER_HR = 20;
+      int empHrs;
+      int dailyWage;
       double empCheck=Math.floor(Math.random()*10)%2;
-      if (empCheck == 1 )
-          System.out.println("Employee is Present");
+      if (IS_FULL_TIME == 1 )
+          empHrs = 8;
       else
-          System.out.println("Employee is Absent");
+          empHrs = 0;
+      dailyWage = empHrs * EMP_RATE_PER_HR;
+      System.out.println("Daily Employee Wage : " + dailyWage);
    }
 }
